@@ -1,7 +1,7 @@
 package comparable;
 
 //Make this code implement Comparable interface
-public class CalendarDate implements Comparable<CalendarDate> {
+public class CalendarDate implements Comparable {
     private int year;
     private int month;
     private int day;
