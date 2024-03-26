@@ -12,7 +12,7 @@ public class CalenderDateClient {
         dateList.add(new CalendarDate(1993, 3, 10));
 
         System.out.println("Sorting " + dateList);
-//        Collections.sort(dateList);
+        Collections.sort(dateList);
         System.out.println("   result " + dateList);
     }
 }

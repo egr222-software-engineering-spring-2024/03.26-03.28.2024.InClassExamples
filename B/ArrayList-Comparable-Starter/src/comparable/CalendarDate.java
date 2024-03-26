@@ -1,7 +1,7 @@
 package comparable;
 
 //Make this code implement Comparable interface
-public class CalendarDate {
+public class CalendarDate implements Comparable<CalendarDate> {
     private int year;
     private int month;
     private int day;
@@ -27,6 +27,17 @@ public class CalendarDate {
     public String toString() {
         return year + "/" + String.format("%02d", month) + "/" + String.format("%02d", day);
     }
-    
+
+    @Override
+    public int compareTo(CalendarDate o) {
+        if (this.year == o.year) {
+            if (this.month == o.month) {
+                return this.day - o.day;
+            }
+            return this.month - o.month;
+        }
+        return this.year - o.year;
+    }
+
 // YOUR CODE GOES HERE
 }
